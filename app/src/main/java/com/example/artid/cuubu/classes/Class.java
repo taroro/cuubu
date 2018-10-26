@@ -8,8 +8,23 @@ public class Class {
     private String subjectTitle;
     private String roomNo;
     private String roomBuilding;
+    private int semester;
+    private String year;
 
-    public Class() {
+    public Class() { }
+
+    public Class(String startTime, String endTime, String dayOfWeek, String subjectId,
+                 String subjectTitle, String roomNo, String roomBuilding,
+                 int semester, String year) {
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.dayOfWeek = dayOfWeek;
+        this.subjectId = subjectId;
+        this.subjectTitle = subjectTitle;
+        this.roomNo = roomNo;
+        this.roomBuilding = roomBuilding;
+        this.semester = semester;
+        this.year = year;
     }
 
     public String getStartTime() {
@@ -36,35 +51,27 @@ public class Class {
         this.dayOfWeek = dayOfWeek;
     }
 
-    public String getSubjectId() {
-        return subjectId;
-    }
+    public String getSubjectId() { return subjectId; }
 
-    public void setSubjectId(String subjectId) {
-        this.subjectId = subjectId;
-    }
+    public void setSubjectId(String subjectId) { this.subjectId = subjectId; }
 
-    public String getSubjectTitle() {
-        return subjectTitle;
-    }
+    public String getSubjectTitle() { return subjectTitle; }
 
-    public void setSubjectTitle(String subjectTitle) {
-        this.subjectTitle = subjectTitle;
-    }
+    public void setSubjectTitle(String subjectTitle) { this.subjectTitle = subjectTitle; }
 
-    public String getRoomNo() {
-        return roomNo;
-    }
+    public String getRoomNo() { return roomNo; }
 
-    public void setRoomNo(String roomNo) {
-        this.roomNo = roomNo;
-    }
+    public void setRoomNo(String roomNo) { this.roomNo = roomNo; }
 
-    public String getRoomBuilding() {
-        return roomBuilding;
-    }
+    public String getRoomBuilding() { return roomBuilding; }
 
-    public void setRoomBuilding(String roomBuilding) {
-        this.roomBuilding = roomBuilding;
-    }
+    public void setRoomBuilding(String roomBuilding) { this.roomBuilding = roomBuilding; }
+
+    public int getSemester() { return semester; }
+
+    public void setSemester(int semester) { this.semester = semester; }
+
+    public String getYear() { return year; }
+
+    public void setYear(String year) { this.year = year; }
 }

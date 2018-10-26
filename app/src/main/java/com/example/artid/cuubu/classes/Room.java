@@ -7,8 +7,14 @@ public class Room {
     private int seat;
     private String type;
 
-    public Room(String roomId) {
+    public Room() { this.roomId = roomId; }
+
+    public Room(String roomId, String roomNo, String roomBuilding, int seat, String type) {
         this.roomId = roomId;
+        this.roomNo = roomNo;
+        this.roomBuilding = roomBuilding;
+        this.seat = seat;
+        this.type = type;
     }
 
     public String getRoomId() {
@@ -31,19 +37,11 @@ public class Room {
         this.roomBuilding = roomBuilding;
     }
 
-    public int getSeat() {
-        return seat;
-    }
+    public int getSeat() { return seat; }
 
-    public void setSeat(int seat) {
-        this.seat = seat;
-    }
+    public void setSeat(int seat) {  this.seat = seat; }
 
-    public String getType() {
-        return type;
-    }
+    public String getType() { return type; }
 
-    public void setType(String type) {
-        this.type = type;
-    }
+    public void setType(String type) { this.type = type; }
 }
